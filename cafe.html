@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#fadcd5", "inverse-surface": "#3e2c28", "secondary-fixed": "#ffdcc3", "on-background": "#271814", "inverse-on-surface": "#ffede9", "on-tertiary-fixed-variant": "#862201", "secondary-container": "#fdb882", "tertiary": "#370800", "on-secondary-fixed": "#2f1500", "primary": "#25160e", "surface-container-highest": "#fadcd5", "on-primary-fixed-variant": "#574238", "surface-container-low": "#fff1ed", "on-error-container": "#93000a", "tertiary-container": "#5b1300", "tertiary-fixed": "#ffdbd1", "on-tertiary": "#ffffff", "surface-tint": "#705a4f", "outline-variant": "#d3c3bd", "inverse-primary": "#dec1b3", "surface-container-lowest": "#ffffff", "surface": "#fff8f6", "tertiary-fixed-dim": "#ffb5a0", "on-surface": "#271814", "on-tertiary-container": "#f06e48", "surface-container": "#ffe9e4", "primary-fixed-dim": "#dec1b3", "surface-bright": "#fff8f6", "on-primary-container": "#aa9084", "primary-fixed": "#fbdcce", "on-error": "#ffffff", "on-primary": "#ffffff", "on-secondary-container": "#78471b", "secondary-fixed-dim": "#fdb882", "on-tertiary-fixed": "#3b0900", "on-secondary": "#ffffff", "outline": "#81756f", "surface-container-high": "#ffe2db", "error": "#ba1a1a", "primary-container": "#3c2a21", "on-secondary-fixed-variant": "#6a3b10", "surface-dim": "#f1d4cd", "on-primary-fixed": "#281810", "secondary": "#865225", "on-surface-variant": "#4f4540", "error-container": "#ffdad6", "background": "#fff8f6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-tablet": "2rem", "margin": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-desktop": "3rem", "space-lg": "1.5rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-md": ["Epilogue"], "body-lg": ["Plus Jakarta Sans"], "price-display": ["Epilogue"], "display-lg-mobile": ["Epilogue"], "display-lg": ["Epilogue"], "headline-sm": ["Epilogue"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Epilogue"], "headline-lg-mobile": ["Epilogue"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "price-display": ["20px", { "lineHeight": "24px", "fontWeight": "700" }], "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen relative"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(60,42,33,0.05)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Mawa's Big Belly Cafe Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbY3TVuhK23xbK5Ha6DUQAt-7btVzfUncJGVZVmnk8blatQZZu7ygp1RAOReTNron_PabALvfBEku3tp00GU49xxtWnREHOnU-t_eKWEyaJeXmf4F0iC5LZkBx7ZSisuIkhWX_7rbNkooM6PUClsPLmiFIO7YAr2dwOKa5y5SyYp2F3z3U4XZ-PW-4-EGR9sQCc4qp1CDYgVvHSxA36ncW3rfDpWbr2DY9-rddlH63j5_gnxHHb_hN"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">Mawa's Big Belly Cafe</span><span class="font-label-sm text-label-sm text-secondary truncate">Home</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Get Directions" class="hidden sm:flex items-center gap-1 bg-surface-container-high text-primary px-3 py-1.5 rounded-full font-label-md text-label-md min-h-[44px] hover:bg-surface-variant transition-colors" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-secondary">near_me</span><span class="hidden md:inline font-label-md text-label-md">Directions</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Open Menu" class="w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full'); document.getElementById('drawer-backdrop').classList.remove('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"></div><div class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-surface z-50 shadow-[0_24px_48px_-12px_rgba(43,27,23,0.18)] flex flex-col justify-between translate-x-full transition-transform duration-300 ease-out pt-safe pb-safe" id="mobile-drawer"><div class="p-space-lg flex flex-col gap-space-lg"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Mawa's Big Belly Cafe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbY3TVuhK23xbK5Ha6DUQAt-7btVzfUncJGVZVmnk8blatQZZu7ygp1RAOReTNron_PabALvfBEku3tp00GU49xxtWnREHOnU-t_eKWEyaJeXmf4F0iC5LZkBx7ZSisuIkhWX_7rbNkooM6PUClsPLmiFIO7YAr2dwOKa5y5SyYp2F3z3U4XZ-PW-4-EGR9sQCc4qp1CDYgVvHSxA36ncW3rfDpWbr2DY9-rddlH63j5_gnxHHb_hN"/><span class="font-headline-sm text-headline-sm text-primary">Mawa's</span></div><button aria-label="Close Drawer" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-[22px]">close</span></button></div><nav class="flex flex-col gap-space-xs font-headline-sm text-headline-sm"><a class="flex items-center gap-space-md py-3 px-space-md rounded-xl text-primary hover:bg-surface-container transition-colors" data-path="home" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-secondary">home</span>Home</a><a class="flex items-center gap-space-md py-3 px-space-md rounded-xl text-primary hover:bg-surface-container transition-colors" data-path="menu" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-secondary">restaurant_menu</span>Menu</a><a class="flex items-center gap-space-md py-3 px-space-md rounded-xl text-primary hover:bg-surface-container transition-colors" data-path="about-us" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-secondary">storefront</span>About</a><a class="flex items-center gap-space-md py-3 px-space-md rounded-xl text-primary hover:bg-surface-container transition-colors" data-path="gallery" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-secondary">photo_library</span>Gallery</a><a class="flex items-center gap-space-md py-3 px-space-md rounded-xl text-primary hover:bg-surface-container transition-colors" data-path="customer-reviews" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-secondary">rate_review</span>Reviews</a><a class="flex items-center gap-space-md py-3 px-space-md rounded-xl text-primary hover:bg-surface-container transition-colors" data-path="contact-and-location" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-secondary">location_on</span>Contact</a></nav></div><div class="p-space-lg flex flex-col gap-space-md bg-surface-container-low"><a class="flex items-center justify-center gap-space-xs bg-primary text-on-primary font-label-lg text-label-lg py-3 px-space-md rounded-full shadow-[0_4px_16px_-2px_rgba(60,42,33,0.15)] min-h-[44px]" href="tel:09010994058"><span class="material-symbols-outlined text-[20px]">call</span><span>Call: 090109 94058</span></a><a class="flex items-center justify-center gap-space-xs bg-surface-container text-secondary font-label-md text-label-md py-2.5 px-space-md rounded-full min-h-[44px]" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">directions</span><span>Get Directions</span></a></div></div><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full px-margin pt-space-md pb-space-lg flex flex-col gap-space-md overflow-hidden">
+<!-- Visual Backdrop / Focal Hero Media -->
+<div class="relative w-full rounded-xl overflow-hidden shadow-lg bg-surface-container-high aspect-[4/3] sm:aspect-[16/9]">
+<img alt="Delicious feast at Mawa's Big Belly Cafe featuring crispy fried momos, chicken wrap, and Mexican bowl on rustic wooden table" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUm0iTsgELkcibvkwknfi_T8Rbrmu-oKD8JIwV1VV8urumRzX0aqScqiXWZjyw26O_DIewUworAgoCVtwnnAeem3CLdJg08Ss6Kf6X_nGvrmI1Iy2t7V97OQFUK7qIO1Z9ny192pQRKslOyr15RRTPA1GizZHR9zK-KA1hjS1UW7h-ufwldrinxecjSlF7IBNaRgTvm2rDA_Q1KTYh1ncrm3mnQsJxNuC0cBd2iYHB0c4EFg6axpWi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex flex-col justify-end p-space-md sm:p-space-lg">
+<span class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container/90 text-on-secondary-container backdrop-blur-md font-label-sm text-label-sm mb-space-xs shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+          Open Daily • Till 1:00 AM 🌙
+        </span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-inverse-on-surface tracking-tight leading-tight">
+          Big Cravings.<br/><span class="text-secondary-fixed">Bigger Belly.</span>
+</h1>
+<p class="font-body-md text-body-md text-surface-container mt-space-xs max-w-md line-clamp-2">
+          Good food, cozy vibes, and late-night cravings — all under one warm, string-lit roof in Malakpet.
+        </p>
+</div>
+</div>
+<!-- Dual Action Pill CTAs -->
+<div class="grid grid-cols-2 gap-space-xs w-full">
+<a class="flex items-center justify-center gap-2 bg-primary text-on-primary py-3.5 px-space-md rounded-full font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-transform min-h-[48px]" href="#menu">
+<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+<span>Explore Menu</span>
+</a>
+<a class="flex items-center justify-center gap-2 bg-surface-container-high text-primary hover:bg-surface-variant py-3.5 px-space-md rounded-full font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-transform min-h-[48px]" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-secondary">near_me</span>
+<span>Get Directions</span>
+</a>
+</div>
+<!-- Trust Badges Tray -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 w-full pt-space-xs">
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">4.7 ★</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">324+ Reviews</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">₹200–₹400</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pocket friendly</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">dark_mode</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">1:00 AM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Midnight hunger</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">New Malakpet</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Hyderabad landmark</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. FEATURED CRAVINGS CAROUSEL -->
+<section class="w-full py-space-md flex flex-col gap-space-sm">
+<div class="px-margin flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Crowd Pleasers</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">What Are You Craving?</h2>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:text-primary flex items-center gap-0.5 pb-1" href="#menu">
+<span>View full</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Horizontally Scrolling Food Trays -->
+<div class="flex gap-space-sm overflow-x-auto px-margin pb-space-sm pt-space-xs no-scrollbar snap-x snap-mandatory">
+<!-- Dish 1: Fried Cheese Momos -->
+<div class="min-w-[270px] max-w-[270px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col flex-shrink-0 snap-start">
+<div class="relative h-40 w-full bg-surface-container">
+<img alt="Golden crispy Fried Cheese Momos showing molten gooey melted cheese pull on dark ceramic plate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jBhEEVYrDdGdhUdRhvj0goT_QRqImJkOF8JBz5_Lku0J_nOrupbEZIUfCBFOI4zS-4tlTBqxWAdsOIFlNiiGD-Q3v-VfJ-TtKCsomT7O5s0tDs8bzsYo0RD_AZ8t0fFOexbQ7M0b-OF_Ymahbim9tQ9ypqiZyg_jU9q_Qc_7RCXRDMcx3oKRMSCsQfYVvYlVvn3k7jgzm3yh0cE8rj2FyM1IgeWXNuZYcInghoq8gaz-hu-3leGA"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Must Try
+          </span>
+<span class="absolute bottom-2.5 right-2.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full font-price-display text-price-display text-primary shadow-sm">
+            ₹220
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-grow gap-space-xs">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight">Fried Cheese Momos</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Crispy golden momos stuffed with molten mozzarella &amp; cheddar, served with spicy fire dip.
+            </p>
+</div>
+<button class="w-full mt-2 py-2 px-3 bg-surface-container-high hover:bg-surface-variant text-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all" onclick="addToOrder('Fried Cheese Momos', 220)">
+<span class="material-symbols-outlined text-[16px] text-secondary">add</span>
+<span>Add to Craving</span>
+</button>
+</div>
+</div>
+<!-- Dish 2: Shawarma Roll -->
+<div class="min-w-[270px] max-w-[270px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col flex-shrink-0 snap-start">
+<div class="relative h-40 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Toasted artisan shawarma wrap sliced gently on a wooden board, loaded with tender grilled spiced chicken, garlic toum, pickles, and crisp lettuce bathed in warm golden ambient cafe lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA72-gUYD8s_WBAzzF9yYM6cghLaJIQmNGRPEKrg11wsnFlJckR3FEp2fL9P1Jyih-a2eDoF4q8kIBK01suMEUH_qkko8hi_Na2pDYvpWjpL9qaFiypMwRl-BcVYFnjKXD3N3JNBi07erQcpl8sbZEA-htWAcSBXSZus0ukMrpkWf6vmpopAW24wp1SbgizvP-RTjov-sEYKZo-XhUrrNg1AWXBndv3EbQ6F_npd1fK8Hlbb7w7p_xJ"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm">
+            Bestseller
+          </span>
+<span class="absolute bottom-2.5 right-2.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full font-price-display text-price-display text-primary shadow-sm">
+            ₹190
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-grow gap-space-xs">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight">Shawarma Roll</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Tender spiced chicken with rich garlic toum and pickles wrapped in toasted flatbread.
+            </p>
+</div>
+<button class="w-full mt-2 py-2 px-3 bg-surface-container-high hover:bg-surface-variant text-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all" onclick="addToOrder('Shawarma Roll', 190)">
+<span class="material-symbols-outlined text-[16px] text-secondary">add</span>
+<span>Add to Craving</span>
+</button>
+</div>
+</div>
+<!-- Dish 3: Mexican Fried Rice -->
+<div class="min-w-[270px] max-w-[270px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col flex-shrink-0 snap-start">
+<div class="relative h-40 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A vibrant ceramic bowl of Mexican fried rice with avocado slices, sweet corn kernels, tender chicken chunks, fresh cilantro leaves, crumbled cotija cheese, and fresh lime wedges under warm cozy bistro illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABZQ8zYzem6KfAReYIuF51ms9hIn9f1xQiYq7xqFKSMW__whdxRprUYBHk33GYElKHPPiOCSI1PjR9W8V2cXnPMn7wWLtcwOhwP8cdpnaC76aLH6CFZjFagJ5TYn5pw6weT_w30CjQ1s1kaaVMbOp-Fq1uHMJwvavHpKNQHeCrE8qExJjaQb2HAx09lYpd8EDTPu7pGY9idQWuADaJzEOWlH7ItJqVJM8sM72dxK6UCkycas29K0_z"/>
+<span class="absolute bottom-2.5 right-2.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full font-price-display text-price-display text-primary shadow-sm">
+            ₹240
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-grow gap-space-xs">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight">Mexican Fried Rice</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Zesty wok-tossed long-grain rice with sweet corn, peppers, beans, fresh avocado and lime.
+            </p>
+</div>
+<button class="w-full mt-2 py-2 px-3 bg-surface-container-high hover:bg-surface-variant text-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all" onclick="addToOrder('Mexican Fried Rice', 240)">
+<span class="material-symbols-outlined text-[16px] text-secondary">add</span>
+<span>Add to Craving</span>
+</button>
+</div>
+</div>
+<!-- Dish 4: Belgian Hot Chocolate -->
+<div class="min-w-[270px] max-w-[270px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col flex-shrink-0 snap-start">
+<div class="relative h-40 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A rustic stoneware ceramic mug overflowing with thick velvety dark Belgian hot chocolate topped with fluffy marshmallows, dusted cocoa powder, and a fragrant cinnamon stick on a rustic wooden cafe table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBryR52jpLUd93J8Pcm5-BRJ35Y3Q0U3rvNn4UPkoqrePb51IsiGg6uFPitEQLIZ8roIU7jvc4jJQnMceFiPYmS4mgm0QHZH2N9bv1fH1MeeYgdY7-lq-XgnLr8_S5zj0PvIpRLeAR7Da1ao1lBp_LcZy2PuHPCIwQezJTYt4YmVuf9Q8EfxUb8AcaQ92mkvRF8pep3v6ja_RzVu26oakqD8C2z43CRJriWSZJqBnVlnbhEyFVEFn3L"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+            Cozy Pick
+          </span>
+<span class="absolute bottom-2.5 right-2.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full font-price-display text-price-display text-primary shadow-sm">
+            ₹160
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-grow gap-space-xs">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight">Hot Chocolate</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Velvety Belgian cocoa topped with pillowy marshmallows and a warm sprinkle of cinnamon.
+            </p>
+</div>
+<button class="w-full mt-2 py-2 px-3 bg-surface-container-high hover:bg-surface-variant text-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all" onclick="addToOrder('Hot Chocolate', 160)">
+<span class="material-symbols-outlined text-[16px] text-secondary">add</span>
+<span>Add to Craving</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. DEDICATED MENU SECTION (#menu) -->
+<section class="w-full px-margin py-space-lg flex flex-col gap-space-md scroll-mt-20" id="menu">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Artisanal &amp; Comfort</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Our Menu</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prepared fresh on order with Hyderabad's bold flavors and bistro soul.</p>
+</div>
+<!-- Category Filter Pill Ribbon -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 -mx-margin px-margin">
+<button class="menu-tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-primary text-on-primary shadow-sm" onclick="filterCategory('all', this)">
+        All Bites
+      </button>
+<button class="menu-tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-variant" onclick="filterCategory('momos', this)">
+        🥟 Momos
+      </button>
+<button class="menu-tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-variant" onclick="filterCategory('chicken', this)">
+        🍗 Chicken Specials
+      </button>
+<button class="menu-tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-variant" onclick="filterCategory('shawarma', this)">
+        🌯 Shawarma
+      </button>
+<button class="menu-tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-variant" onclick="filterCategory('rice-noodles', this)">
+        🍜 Rice &amp; Noodles
+      </button>
+<button class="menu-tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-variant" onclick="filterCategory('beverages', this)">
+        ☕ Drinks &amp; Shakes
+      </button>
+</div>
+<!-- Menu Items List -->
+<div class="flex flex-col gap-space-xs" id="menu-items-grid">
+<!-- Item 1: Momos -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="momos">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0" title="Veg / Cheese">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Fried Cheese Momos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Crispy golden pastry stuffed with mozzarella &amp; cheddar with sweet fire dip.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹220</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">Chef Signature</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img alt="Fried Cheese Momos" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jBhEEVYrDdGdhUdRhvj0goT_QRqImJkOF8JBz5_Lku0J_nOrupbEZIUfCBFOI4zS-4tlTBqxWAdsOIFlNiiGD-Q3v-VfJ-TtKCsomT7O5s0tDs8bzsYo0RD_AZ8t0fFOexbQ7M0b-OF_Ymahbim9tQ9ypqiZyg_jU9q_Qc_7RCXRDMcx3oKRMSCsQfYVvYlVvn3k7jgzm3yh0cE8rj2FyM1IgeWXNuZYcInghoq8gaz-hu-3leGA"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Fried Cheese Momos', 220)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Paneer Momos -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="momos">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Paneer Fried Momos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Crunchy parcels filled with house-seasoned cottage cheese, coriander &amp; chili flakes.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹180</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Golden crisp deep fried paneer momos garnished with chopped spring onions and chili flakes in a cozy cafe setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6OQD3I7shrzvLL6AR1fw3oUQ12lZXD9kenZ54JwNixjHjNDaJxU4rZQzbCaYvlbh1TvBmzjwUV6wnxeG86ulkxJl-N34HzU8fqu1T1BkEaQ86lAjx027TU0pBWDt0T12EwARDTGBj5m8gO5j-FGnBhnlYkGjJlqlxytvnGkLCrdmKZmAXa9czcchFlm-nVkr22LvpJAcjFtwKQlMl1mqY7SA3Zs5JzSHyZR8XDXNMdksLOCDX1bWe"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Paneer Fried Momos', 180)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Chicken Tempura -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="chicken">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Chicken Tempura</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Crisp, airy Japanese-style seasoned chicken strips paired with tangy house garlic mayo.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹230</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Crunchy</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Golden airy Japanese chicken tempura tenders piled neatly on brown butcher paper with a ramekin of creamy dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGc6dY2oMnfMlWfLsq6Iu9BQQpqDZmE9ZdjIGsYQt3kmO18_PLIRIYuZf4Fvi4gRUJI14AoFMMx1TCWMoEdQDP2c3fWAtolDEWeLL4Lkhi7DPigoaKgO7RnSSz43VlOGNUyTYJNUU2kWhJJe7QJuB9c_9Dj-ShpVhqb1442UoUolVqceLQ-u2s8MqDTOiNFgPiE8EuicaHVcZ_2KwzUsUPfGvflc9Qjjega-yokg82K0JrgoGpReg0"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Chicken Tempura', 230)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Spinach Mushroom Stuffed Chicken -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="chicken">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Spinach Mushroom Chicken</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Juicy grilled chicken pocketed with rich garlic spinach &amp; sautéed butter mushrooms.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹290</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">Hearty</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Sizzling grilled chicken breast stuffed with creamy spinach and mushrooms, served with rosemary sprig on ceramic tableware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1FJmTjZboGPJsUIG6Ae4GYmwWCKxMelN0FdX4IyYyLeh9poyGlJAdfKmKismQBZpz1pGgncOF0ez7GdTPXfCvvwG-UPXX6cepzyVpRlY90YvLBMOESHx1qizAcHhkB3_A9rL_NUQNkUdraH6perPTj6wTppztDr8PDOUV3sfXeQSt2Ms38MhLm2WRFIuq2CcZhHaERpnGHZfk9eSH2sMaAcQ5rpOZOAIK_iCqp8382xzOMDX5v7z9"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Spinach Mushroom Chicken', 290)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Shawarma Roll -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="shawarma">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Classic Chicken Shawarma</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Toasted rumali filled with smoked shredded chicken, creamy toum and fresh pickled gherkins.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹190</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up of a freshly made chicken shawarma roll wrapped tightly in parchment paper showing juicy spiced meat inside" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjfgewExBGAc_GXCELFQmSZ4nSWYi4Zut_enwSMtwUf_EJhBA2Y2ziQU991igU2bwbW45wT17Vyh5OPG52cwTWwhIlnpMb7tvsfQX30w9tHxBqkiJS3zpJDZsQ52PJnsRUx7l8V9xAIZRKXB1H_4Mm8fDgIWHdohnfyGeDFkhxLp6zw2Hwn_f5SH8rdM-pEz9Ftpq478pn1y-mx3DheJ5uFCLdgMyCWOo3yjbr56Ga5FrDJuc4OQmX"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Classic Chicken Shawarma', 190)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Street Style Hakka Noodles -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="rice-noodles">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Street Hakka Noodles</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            High flame wok-tossed noodles loaded with crunchy cabbage, bell peppers, soy, and garlic.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹190</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Steaming wok-tossed street style Hakka noodles with sliced carrots, bell peppers, and scallions in a black bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYWWC2p7AJjKeUf7Zh5MDB18x1r7icTj04oSvVDcK0gD5KGY3WgBj2WrXwwb7EvzYRl22hsy518Fwhdg3MblVc0czcumNx8C2tCBZGXQA16lbIqCWNFJJfni0ulZHQKM2iLE1HykJA_9hDVN8-sEu7Xt2WZTyYmwl-Lw1AmtIAOk6N6c5EIufJocBDosDLCZulTN8C2eDx0FuoYJsyc7OSZkNI8PGZmOWtwju5hbnxkZu_-QEmN3Zu"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Street Hakka Noodles', 190)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 7: Mexican Fried Rice -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="rice-noodles">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Mexican Fried Rice</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Spicy salsa flavored basmati rice with sweet corn, pinto beans, and fresh guacamole topper.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹240</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Plate of hot Mexican rice with avocado cubes and lime wedges served on an earthy dining setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh-iJs92VJRrXq4Auo8lxqKiuCeejrQLazI3cO5xQ1jhuxfoSSTtg4ETDBhLA_8hPkbzM60njjfQ7HfoOiKuIdvukSeIQA-2mqEZaIUTIei13PohELhacKJz9NPJsjHnr28vIf12AnKmJxoxnNsfGayUD1cxXPkVr3sBQOx0MVFo3xUgXvx-cuWOMRhJEnMfjdahlFnL1oWLuhKhSG0I-0xS7tKK1scAt3GPr1v5I4DkFlWeTba52i"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Mexican Fried Rice', 240)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 8: Hot Chocolate -->
+<div class="menu-card flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl gap-space-sm" data-category="beverages">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded flex items-center justify-center bg-surface-container-highest flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">Belgian Hot Chocolate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Rich steamed chocolate drink topped with toasted mini marshmallows and cinnamon dust.
+          </p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-price-display text-price-display text-primary">₹160</span>
+</div>
+</div>
+<div class="relative w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cup of frothy hot chocolate with fluffy marshmallows and cinnamon stick dusting inside a cozy hyderabadi cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc4mUTJTpPlgS11e4FzLTmM-5ZT-X4S9Zy1SdDVbYozkXwS1wgZ0pgpEOPg0KjB3WBQsVaZ2e4ba5HTOEdzZAeZFz5wkx1j9BkP0XNX-IGSwD3VpcUqFc2V1UvjMpGnEnWPSkDpeTzYqxtRgeEK4XJmycedTvDge_o1YlP5QsPlUQNfzaXl4qHA9AaOOAFNPx-gSTnfr3mTHyLXNu02azzzA8ok84PguUVW9rOvFoF4L5Zw8JcUM90"/>
+<button class="absolute bottom-1 right-1 w-7 h-7 bg-primary text-on-primary rounded-full flex items-center justify-center shadow active:scale-95" onclick="addToOrder('Belgian Hot Chocolate', 160)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- View Full Menu Action Banner -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-sm mt-space-xs text-center sm:text-left">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Want to browse everything?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Over 40+ snacks, burgers, milkshakes, and curries</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 bg-primary text-on-primary rounded-full font-label-md text-label-md active:scale-95 transition-all shadow-sm" onclick="openMenuModal()">
+        View Full Menu PDF
+      </button>
+</div>
+</section>
+<!-- 4. WHY PEOPLE LOVE US -->
+<section class="w-full px-margin py-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">The Mawa Experience</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Why People Keep Coming Back</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<!-- Card 1 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">4.7★ Rating</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Consistently celebrated by 324+ Hyderabad food lovers for unmatched momos, thick shakes, and friendly vibes.
+          </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">savings</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">Genuinely Affordable</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Generous sharing portions at roughly ₹200–₹400 per person. Big taste that never hurts your wallet.
+          </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">cottage</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">Cozy Atmosphere</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Lively, string-lit, neat rustic wooden tables made for long evening conversations with your crew.
+          </p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">sentiment_very_satisfied</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">Heartwarming Service</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Warm Hyderabadi hospitality where the owners and team make every single guest feel right at home.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. ABOUT THE CAFE (#about) -->
+<section class="w-full px-margin py-space-lg flex flex-col gap-space-md scroll-mt-20" id="about">
+<div class="bg-surface-container-high rounded-2xl overflow-hidden shadow-md flex flex-col">
+<div class="relative w-full h-56 bg-surface-container">
+<img alt="Warm, festive cafe interior showing young happy friends seated together laughing under twinkling fairy lights at wooden tables" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBviXRAJj6pcP61fxe6wuEIIda_OlsH_9SBC0d6MOQtEnAGYGNszYqajk1rjWoxGUgXuP-9DKwpja_or-J5IFKr8nEUsPvQnImhjnGV_n7qZQG2iyHiBHG9QmTGCwPPAqT0LKBjniQEOaeyZ5LEyY9Z4gNcn0g_ff4wXLvjjVSd444DLOdI9MMxOA6RF_2oA5UyjoSbW9ajaYnuBLhSbGG9g2YsystPuacJLn5qLnvVXh2WGmJUPf-7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 to-transparent flex items-end p-space-md">
+<span class="px-3 py-1 rounded-full bg-surface/90 text-primary font-label-sm text-label-sm backdrop-blur-md">
+            📍 New Malakpet, Hyderabad
+          </span>
+</div>
+</div>
+<div class="p-space-md sm:p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Our Story</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">A Little Cafe With A Big Appetite</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Mawa's Big Belly Cafe was born from a simple belief: Hyderabad deserves a late-night refuge where the momos are crispy, the cheese is molten, and the conversations can linger past midnight without any rush.
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tucked right beside Konak Diagnostics in New Malakpet, we serve comforting fusion snacks, authentic spiced wraps, hot skillet plates, and creamy beverages in an intimate, string-lit room designed for belly laughs and big bites.
+        </p>
+<!-- Highlight Chips -->
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface font-label-md text-label-md text-primary shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">wifi</span>
+            Free High-Speed Wi-Fi
+          </span>
+<span class="px-3 py-1.5 rounded-full bg-surface font-label-md text-label-md text-primary shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">delivery_dining</span>
+            No-Contact Delivery
+          </span>
+<span class="px-3 py-1.5 rounded-full bg-surface font-label-md text-label-md text-primary shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">drive_eta</span>
+            Drive-through Pickup
+          </span>
+<span class="px-3 py-1.5 rounded-full bg-surface font-label-md text-label-md text-primary shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">group</span>
+            Dine-in Comfort
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CUSTOMER REVIEWS (#reviews) -->
+<section class="w-full px-margin py-space-md flex flex-col gap-space-md scroll-mt-20" id="reviews">
+<div class="flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Hyderabadi Love</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Loved By Our Diners</h2>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2.5 py-1 rounded-full text-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7 (324+)</span>
+</div>
+</div>
+<!-- Review Cards Stack -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xs">
+<!-- Review 1 -->
+<div class="p-space-md bg-surface-container-low rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-2">
+<div class="flex text-secondary text-[16px]">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "The fried cheese momos are absolutely unmatched in Malakpet! Crunchy on the outside, pure molten cheese pull inside. The hot chocolate is pure winter comfort."
+          </p>
+</div>
+<div class="flex items-center gap-2.5 pt-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed text-label-md">
+            RK
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Rahul K.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Local Guide • 42 reviews</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-md bg-surface-container-low rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-2">
+<div class="flex text-secondary text-[16px]">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Super cozy hangout spot for late-night cravings! Being open till 1:00 AM is a lifesaver after late work shifts. Extremely reasonable prices around ₹300 per head."
+          </p>
+</div>
+<div class="flex items-center gap-2.5 pt-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-container text-label-md">
+            SN
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Syeda Nazia</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dined in Malakpet</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-md bg-surface-container-low rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-2">
+<div class="flex text-secondary text-[16px]">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Loved the chicken shawarma and Mexican fried rice. The staff and owner are super friendly and attentive. Perfect chill spot to sit and relax with college friends."
+          </p>
+</div>
+<div class="flex items-center gap-2.5 pt-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-primary text-label-md">
+            AV
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Arun Varma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified Google Diner</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center pt-space-xs">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-high text-primary hover:bg-surface-variant font-label-md text-label-md shadow-sm active:scale-95 transition-all" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank">
+<span>Read All 324+ Google Reviews</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">open_in_new</span>
+</a>
+</div>
+</section>
+<!-- 7. INSTAGRAM-STYLE GALLERY (#gallery) -->
+<section class="w-full px-margin py-space-md flex flex-col gap-space-sm scroll-mt-20" id="gallery">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Visual Feasts</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Cafe Moments &amp; Snaps</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-3 py-1 rounded-full">
+        @mawasbigbellycafe
+      </span>
+</div>
+<!-- Masonry-like Mobile Mosaic -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-container shadow-sm relative group">
+<img alt="Feast spread at Mawa's Cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUm0iTsgELkcibvkwknfi_T8Rbrmu-oKD8JIwV1VV8urumRzX0aqScqiXWZjyw26O_DIewUworAgoCVtwnnAeem3CLdJg08Ss6Kf6X_nGvrmI1Iy2t7V97OQFUK7qIO1Z9ny192pQRKslOyr15RRTPA1GizZHR9zK-KA1hjS1UW7h-ufwldrinxecjSlF7IBNaRgTvm2rDA_Q1KTYh1ncrm3mnQsJxNuC0cBd2iYHB0c4EFg6axpWi"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-container shadow-sm relative group">
+<img alt="Cheese momos cheese pull" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jBhEEVYrDdGdhUdRhvj0goT_QRqImJkOF8JBz5_Lku0J_nOrupbEZIUfCBFOI4zS-4tlTBqxWAdsOIFlNiiGD-Q3v-VfJ-TtKCsomT7O5s0tDs8bzsYo0RD_AZ8t0fFOexbQ7M0b-OF_Ymahbim9tQ9ypqiZyg_jU9q_Qc_7RCXRDMcx3oKRMSCsQfYVvYlVvn3k7jgzm3yh0cE8rj2FyM1IgeWXNuZYcInghoq8gaz-hu-3leGA"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-container shadow-sm relative group col-span-2 sm:col-span-1">
+<img alt="Cozy evening cafe vibes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBviXRAJj6pcP61fxe6wuEIIda_OlsH_9SBC0d6MOQtEnAGYGNszYqajk1rjWoxGUgXuP-9DKwpja_or-J5IFKr8nEUsPvQnImhjnGV_n7qZQG2iyHiBHG9QmTGCwPPAqT0LKBjniQEOaeyZ5LEyY9Z4gNcn0g_ff4wXLvjjVSd444DLOdI9MMxOA6RF_2oA5UyjoSbW9ajaYnuBLhSbGG9g2YsystPuacJLn5qLnvVXh2WGmJUPf-7"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-container shadow-sm relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Artisanal iced coffee topped with chocolate swirl and whipped cream on warm oak wood table at cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa_tMRgZMajW03wknxO91a9B5gATARsg_8OwEnejyJQ_GOmjqRtLjF1diK-hwlvWqLrJGAarNo5rcmxirQ0zcOC1KIySwDkNAHH7vRIRY0Zi-0je9VzvoRGsLXRnK5-O674X83okrIg_kawg7h6B7mbPQHeuOdRBS2TN06qEj9CDOjureJg8WHI9tvh-e8CfYMdt6o5jVpkOCTJ_l_dZCnqLo8c25NoE-9z4mdfkOkcdspY08Qk8Ji"/>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-container shadow-sm relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Juicy seasoned grilled chicken loaded platter with fries and dip served fresh at cozy cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjuppb3tNC1actXgipO-yxsn4t92yZnKMRW6WAP_JfHTYfRAe4sY2c6aMboPtyt-O2yyQyDeG011ELA28uP_aVqf9BWOL0XT1JQJqqHv4jBpWly0WFJX4TKXx-Ja16v3ziw38Lw5mzabS8zWn4J4rjm6gj3VCXI3EPZkZDP4Ix33VymYnix2bRcpYICf8c9h5xDvehREZtvgWT_yTjalI_5ldBA_gxSiVmtRoMWzSEwu0eyiMPplDM"/>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-container shadow-sm relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Evening cafe exterior facade in Hyderabad with warm lights, chalkboard menu and happy patrons seated" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGdCD3AA4U4PSmTGrdqk7kVnvFBtWE0Tj5Hft9omsqG8NI7wHKcSzx-aCOCvZQUkdPEZZM7buDpAUJ8bs7ubJuvKK85SIz5rsoNmpInPNgXlD8ROsdPBFcN26ROew-qP4yMbvaCtfCPnw_DaOOV_zq5WSPzSQCkiRbxj1FLpdKGbHZ35vE1tu8zFKyi6CnTD3HulJCVS7UjXauWV9KyhHXS3r8zK6QqfrC6d9Qdl783uyPZYpgr5zK"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">photo_camera</span>
+<span class="font-body-sm text-body-sm">Tag us on Instagram to be featured on our wall!</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">#MawasBigBelly</span>
+</div>
+</section>
+<!-- 8. LOCATION & HOURS SECTION (#contact) -->
+<section class="w-full px-margin py-space-lg flex flex-col gap-space-md scroll-mt-20" id="contact">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Visit Us</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Come Find Us</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Right in the buzzing heart of New Malakpet, Hyderabad.</p>
+</div>
+<!-- Location Card with Interactive Map Container -->
+<div class="bg-surface-container-low rounded-2xl overflow-hidden shadow-md flex flex-col">
+<!-- Static Google Maps trigger block -->
+<div class="w-full h-52 bg-cover bg-center relative" data-location="Mawa's Big Belly cafe, Beside KONAK DIAGNOSTICS, New Malakpet, Hyderabad, Telangana 500036" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2q4n84Irm6EKoSNf53_HK6lzx5f1tzGEY8Qk0US_yqurdSmm8NN2otf9UxFStLB7MgrmFw9DSwkvibgYf0YLKpj1oYaxUbJrnOHJr7HHyOFvPOGCsKkTDrNq4z-gQxzU3c67yxhF7vISNi7dPhrii2fMWionb91PUI72kvh41ZFk1U69Co_b7Q6QL3FLbgTRqtN7F3ca_mvuiiqxn7NmYNA_toHTwWkE3e4KhItVMq4lg09MIRyft')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center">
+<a class="flex items-center gap-2 bg-surface px-4 py-2.5 rounded-full font-label-md text-label-md text-primary shadow-lg hover:bg-surface-container active:scale-95 transition-all" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-secondary">map</span>
+<span>Open in Google Maps</span>
+</a>
+</div>
+</div>
+<!-- Address & Info details -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Location Landmark</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              Beside KONAK DIAGNOSTICS, New Malakpet, Hyderabad, Telangana 500036
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Operating Hours</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              Open Daily: 1:00 PM – 1:00 AM (Midnight)
+            </p>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-0.5">Kitchen accepts last orders till 12:45 AM</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-variant flex items-center justify-center text-secondary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Direct Phone</span>
+<a class="font-body-md text-body-md text-primary font-bold hover:underline mt-0.5" href="tel:09010994058">
+              +91 90109 94058
+            </a>
+</div>
+</div>
+<!-- Action Links Pair -->
+<div class="grid grid-cols-2 gap-2 pt-2">
+<a class="flex items-center justify-center gap-1.5 py-3 px-3 rounded-full bg-surface-container-high text-primary font-label-md text-label-md active:scale-95 transition-all text-center" href="tel:09010994058">
+<span class="material-symbols-outlined text-[18px] text-secondary">call</span>
+<span>Call Now</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-3 px-3 rounded-full bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-all shadow-md text-center" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Get Directions</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. LATE-NIGHT CRAVINGS CALLOUT CARD -->
+<section class="w-full px-margin pb-space-lg">
+<div class="relative w-full rounded-2xl bg-primary text-on-primary p-space-lg flex flex-col items-center text-center gap-space-sm shadow-xl overflow-hidden">
+<!-- Ambient warm glow badge -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">bedtime</span>
+</div>
+<div class="flex flex-col gap-1 max-w-sm">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-inverse-on-surface">Late-Night Cravings? We've Got You.</h3>
+<p class="font-body-md text-body-md text-surface-variant mt-1">
+          Good food doesn't have to wait until tomorrow. Hot fried momos, juicy shawarmas, and ice-cold shakes are ready for you till 1:00 AM.
+        </p>
+</div>
+<a class="mt-space-xs inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold shadow-lg active:scale-95 transition-transform" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+<span>Drive Down To Malakpet</span>
+</a>
+</div>
+</section>
+<!-- Interactive Quick Order / Toast Sheet Container -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-inverse-surface text-inverse-on-surface p-space-sm rounded-2xl shadow-2xl flex items-center justify-between gap-space-sm translate-y-32 opacity-0 pointer-events-none transition-all duration-300 z-40" id="order-toast">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm truncate text-inverse-on-surface" id="toast-title">Added to Craving</span>
+<span class="font-body-sm text-body-sm text-surface-variant truncate" id="toast-subtitle">Show at counter or call to order</span>
+</div>
+</div>
+<a class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full font-label-md text-label-md flex-shrink-0" href="tel:09010994058">
+      Call Now
+    </a>
+</div>
+<!-- Full Menu Modal Dialog (Vanilla JS) -->
+<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4" id="menu-modal">
+<div class="bg-surface w-full max-w-md max-h-[85vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">restaurant_menu</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Full Cafe Menu</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface-variant" onclick="closeMenuModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md overflow-y-auto flex flex-col gap-space-md">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-secondary mb-2">🥟 MOMOS SPECIAL</h4>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Fried Cheese Momos (6 pcs)</span><span class="font-bold">₹220</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Paneer Fried Momos (6 pcs)</span><span class="font-bold">₹180</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Chicken Schezwan Momos</span><span class="font-bold">₹210</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Steamed Classic Veg Momos</span><span class="font-bold">₹150</span></div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-secondary mb-2">🍗 CHICKEN &amp; APPETIZERS</h4>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Chicken Tempura Crispy Bites</span><span class="font-bold">₹230</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Spinach Mushroom Stuffed Chicken</span><span class="font-bold">₹290</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>BBQ Glazed Chicken Wings</span><span class="font-bold">₹240</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Loaded Cheesy Peri-Peri Fries</span><span class="font-bold">₹170</span></div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-secondary mb-2">🌯 ROLLS &amp; SHAWARMA</h4>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Special Rumali Chicken Shawarma</span><span class="font-bold">₹190</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Open Plate Shawarma with Khubus</span><span class="font-bold">₹240</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Crispy Paneer Tikka Wrap</span><span class="font-bold">₹170</span></div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-secondary mb-2">☕ BEVERAGES &amp; SHAKES</h4>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Belgian Hot Chocolate w/ Marshmallows</span><span class="font-bold">₹160</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Hyderabadi Irani Kadak Chai</span><span class="font-bold">₹50</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Nutella Thick Shake</span><span class="font-bold">₹190</span></div>
+<div class="flex justify-between py-1 font-body-sm text-body-sm"><span>Cold Coffee with Ice Cream</span><span class="font-bold">₹160</span></div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low flex justify-between items-center gap-2">
+<a class="flex-1 py-3 text-center bg-primary text-on-primary rounded-full font-label-md text-label-md" href="tel:09010994058">
+          Order for Pickup: 090109 94058
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter logic for Menu Category tabs
+  function filterCategory(category, buttonElement) {
+    const tabs = document.querySelectorAll('.menu-tab-btn');
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary', 'text-on-primary');
+      tab.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    buttonElement.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    buttonElement.classList.add('bg-primary', 'text-on-primary');
+
+    const cards = document.querySelectorAll('.menu-card');
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Toast feedback on clicking "+" or "Add"
+  let toastTimer;
+  function addToOrder(itemName, price) {
+    const toast = document.getElementById('order-toast');
+    const title = document.getElementById('toast-title');
+    const subtitle = document.getElementById('toast-subtitle');
+
+    title.innerText = itemName + ' added!';
+    subtitle.innerText = '₹' + price + ' • Ready to call or dine-in';
+
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  // Menu Modal controls
+  function openMenuModal() {
+    const modal = document.getElementById('menu-modal');
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+  }
+
+  function closeMenuModal() {
+    const modal = document.getElementById('menu-modal');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+  }
+</script><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-32 px-margin mt-space-xl"><div class="max-w-md mx-auto flex flex-col items-center text-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="Mawa's Big Belly Cafe Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbY3TVuhK23xbK5Ha6DUQAt-7btVzfUncJGVZVmnk8blatQZZu7ygp1RAOReTNron_PabALvfBEku3tp00GU49xxtWnREHOnU-t_eKWEyaJeXmf4F0iC5LZkBx7ZSisuIkhWX_7rbNkooM6PUClsPLmiFIO7YAr2dwOKa5y5SyYp2F3z3U4XZ-PW-4-EGR9sQCc4qp1CDYgVvHSxA36ncW3rfDpWbr2DY9-rddlH63j5_gnxHHb_hN"/><h3 class="font-headline-md text-headline-md text-primary">Mawa's Big Belly Cafe</h3></div><p class="font-body-md text-body-md text-secondary font-semibold italic">"Good food. Big cravings. Cozy vibes."</p><div class="flex flex-wrap justify-center gap-x-space-md gap-y-space-xs font-label-md text-label-md text-on-surface-variant my-space-xs"><a class="hover:text-primary transition-colors py-1" data-path="home" href="#">Home</a><a class="hover:text-primary transition-colors py-1" data-path="menu" href="#">Menu</a><a class="hover:text-primary transition-colors py-1" data-path="about-us" href="#">About</a><a class="hover:text-primary transition-colors py-1" data-path="gallery" href="#">Gallery</a><a class="hover:text-primary transition-colors py-1" data-path="customer-reviews" href="#">Reviews</a><a class="hover:text-primary transition-colors py-1" data-path="contact-and-location" href="#">Contact</a></div><div class="flex flex-col gap-space-xs items-center text-center font-body-sm text-body-sm text-on-surface-variant bg-surface-container/60 p-space-md rounded-xl w-full"><div class="flex items-center gap-1 text-primary font-semibold"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><a class="hover:underline" href="tel:09010994058">Phone: 090109 94058</a></div><div class="flex items-start gap-1 justify-center"><span class="material-symbols-outlined text-[18px] text-secondary flex-shrink-0 mt-0.5">location_on</span><span>Beside KONAK DIAGNOSTICS, New Malakpet, Hyderabad, Telangana 500036</span></div></div><p class="font-label-sm text-label-sm text-outline mt-space-sm">copyright © 2026 Mawa's Big Belly Cafe. All rights reserved.</p></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(60,42,33,0.08)]" data-active-classes="bg-primary text-on-primary font-bold"><div class="flex items-center justify-between gap-space-xs px-margin py-2.5 max-w-lg mx-auto"><a class="flex-1 flex items-center justify-center gap-1.5 bg-surface-container-high text-primary hover:bg-surface-variant py-3 px-space-xs rounded-full font-label-md text-label-md min-h-[48px] transition-transform active:scale-[0.98]" href="tel:09010994058"><span class="material-symbols-outlined text-[20px] text-secondary">call</span><span>Call Now</span></a><a class="flex-1 flex items-center justify-center gap-1.5 bg-surface-container-high text-primary hover:bg-surface-variant py-3 px-space-xs rounded-full font-label-md text-label-md min-h-[48px] transition-transform active:scale-[0.98]" href="https://www.google.com/maps/place/Mawa's+Big+Belly+cafe/@17.3687213,78.5160075,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99a0fd5ed03f:0x30056965a9c320e9!8m2!3d17.3687162!4d78.5185824!16s%2Fg%2F11y5j5pd4w" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] text-secondary">near_me</span><span>Directions</span></a><a class="flex-[1.2] flex items-center justify-center gap-1.5 bg-primary text-on-primary hover:bg-primary-container py-3 px-space-xs rounded-full font-label-lg text-label-lg shadow-[0_4px_16px_-2px_rgba(60,42,33,0.15)] min-h-[48px] transition-transform active:scale-[0.98]" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span>Explore Menu</span></a></div></nav></body></html>
